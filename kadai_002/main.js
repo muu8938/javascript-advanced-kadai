@@ -81,7 +81,7 @@ const rankCheck = score => {
   if(score < 100) {
     text = `あなたのランクはCです。\nBランクまであと${100 - score}文字です。`;
   } else if(score < 200) {
-    text = `あなたのランクはBです。\nAランクまであと${200- score}文字です。`;
+    text = `あなたのランクはBです。\nAランクまであと${200 - score}文字です。`;
   } else if(score < 300) {
     text = `あなたのランクはAです。\nSランクまであと${300 - score}文字です。`;
   } else if(score >= 300) {
@@ -89,7 +89,7 @@ const rankCheck = score => {
   }
 
   // 生成したメッセージと一緒に文字列を返す
-  return `${score}文字打てました!\n${text}\【OK】リトライ / 【キャンセル】終了`;
+  return `${score}文字打てました!\n${text}\n【OK】リトライ / 【キャンセル】終了`;
 };
 
 // ゲームを終了
