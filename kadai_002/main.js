@@ -97,7 +97,7 @@ const gameOver = id => {
   clearInterval(id);
 
     // 10ミリ秒経過後「タイムアップ！」を表示
-  untypedfield.textContent ='タイムアップ!';
+  untypedfield.textContent ='タイムアップ！';
 
   setTimeout(() => {
     const result = confirm(rankCheck(score));
